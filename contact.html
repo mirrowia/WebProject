@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Linkin Park</title>
+</head>
+
+<body>
+    <header>
+        <div id="logoGroup">
+            <h1>Linkin Park</h1>
+            <img src="img/logo0.png" alt="Logo 1">
+            <img src="img/logo2.png" alt="Logo 2">
+            <img src="img/logo3.png" alt="Logo 3">
+            <img src="img/logo4.png" alt="Logo 4">
+            <img src="img/logo5.png" alt="Logo 5">
+        </div>
+        <nav id="navbar">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="members.html">Miembros</a></li>
+                <li><a href="discography.html">Discografia</a></li>
+                <li><a href="multimedia.html">Multimedia</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Contacto</h1>
+
+        <form action="" method="post">
+
+            <fieldset class="contact">
+                <legend>Contacto - Mensaje</legend>
+                <div class="contact__field">
+                    <label for="name">Name y Apellido</label>
+                    <input type="text" name="" id="name" placeholder="John Doe" required>
+                </div>
+                <div class="contact__field">
+                    <label for="email">Email</label>
+                    <input type="email" name="" id="email" placeholder="johndoe@domain.com" required>
+                </div>
+                <div class="contact__field">
+                    <label for="message">Message</label>
+                    <textarea id="w3review" name="w3review" rows="4" cols="50"></textarea>
+                </div>
+            </fieldset>
+            <fieldset class="survey">
+                <legend>Encuesta - Album favorito</legend>
+                <div class="survey__field">
+                    <input type="radio" name="album" id="ht" value="hybridtheory">
+                    <label for="ht">Hybrid Theory</label>
+                </div>
+                <div class="survey__field">
+                    <input type="radio" name="album" id="mt" value="meteora">
+                    <label for="mt">Meteora</label>
+                </div>
+                <div class="survey__field">
+                    <input type="radio" name="album" id="mtm" value="minutestomidnight">
+                    <label for="mtm">Minutes to Midnight</label>
+                </div>
+                <div class="survey__field">
+                    <input type="radio" name="album" id="ats" value="athousandsuns">
+                    <label for="ats">A Thousand Suns </label>
+                </div>
+                <div class="survey__field">
+                    <input type="radio" name="album" id="lt" value="livingthings">
+                    <label for="lt">Living Things</label>
+                </div>
+                <div class="survey__field">
+                    <input type="radio" name="album" id="thp" value="thehuntingparty">
+                    <label for="thp">The Hunting Party</label>
+                </div>
+                <div class="survey__field">
+                    <input type="radio" name="album" id="oml" value="onemorelight">
+                    <label for="oml">One More Light</label>
+                </div>
+            </fieldset>
+            <input id="enviar" type="submit" value="Enviar" class="btn">
+        </form>
+
+    </main>
+    <footer>
+        <div id="social">
+            <p class="left">Redes sociales</p>
+            <ul class="right">
+                <li><a href="https://web.facebook.com/linkinpark/"><img src="img/icons/icon_fb.svg"
+                            alt="Facebook Icon"></a></li>
+                <li><a href="https://www.instagram.com/linkinpark/"><img src="img/icons/icon_ig.svg"
+                            alt="Instagram Icon"></a></li>
+                <li><a href="https://twitter.com/linkinpark"><img src="img/icons/icon_tw.svg" alt="Twitter Icon"></a>
+                </li>
+                <li><a href="https://www.youtube.com/channel/UCZU9T1ceaOgwfLRq7OKFU4Q"><img src="img/icons/icon_yt.svg"
+                            alt="Youtube Icon"></a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>
