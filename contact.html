@@ -30,59 +30,80 @@
         </nav>
     </header>
     <main>
-        <h1>Contacto</h1>
-
-        <form action="" method="post">
-
-            <fieldset class="contact">
-                <legend>Contacto - Mensaje</legend>
-                <div class="contact__field">
-                    <label for="name">Name y Apellido</label>
-                    <input type="text" name="" id="name" placeholder="John Doe" required>
-                </div>
-                <div class="contact__field">
-                    <label for="email">Email</label>
-                    <input type="email" name="" id="email" placeholder="johndoe@domain.com" required>
-                </div>
-                <div class="contact__field">
-                    <label for="message">Message</label>
-                    <textarea id="w3review" name="w3review" rows="4" cols="50"></textarea>
-                </div>
-            </fieldset>
-            <fieldset class="survey">
-                <legend>Encuesta - Album favorito</legend>
-                <div class="survey__field">
-                    <input type="radio" name="album" id="ht" value="hybridtheory">
-                    <label for="ht">Hybrid Theory</label>
-                </div>
-                <div class="survey__field">
-                    <input type="radio" name="album" id="mt" value="meteora">
-                    <label for="mt">Meteora</label>
-                </div>
-                <div class="survey__field">
-                    <input type="radio" name="album" id="mtm" value="minutestomidnight">
-                    <label for="mtm">Minutes to Midnight</label>
-                </div>
-                <div class="survey__field">
-                    <input type="radio" name="album" id="ats" value="athousandsuns">
-                    <label for="ats">A Thousand Suns </label>
-                </div>
-                <div class="survey__field">
-                    <input type="radio" name="album" id="lt" value="livingthings">
-                    <label for="lt">Living Things</label>
-                </div>
-                <div class="survey__field">
-                    <input type="radio" name="album" id="thp" value="thehuntingparty">
-                    <label for="thp">The Hunting Party</label>
-                </div>
-                <div class="survey__field">
-                    <input type="radio" name="album" id="oml" value="onemorelight">
-                    <label for="oml">One More Light</label>
-                </div>
-            </fieldset>
-            <input id="enviar" type="submit" value="Enviar" class="btn">
-        </form>
-
+        <h2>Contacto</h2>
+        <div id="contactContainer">
+            <div id="contactImgContainer">
+                <img src="img/contact.png" alt="The Hunting Party Album Art">
+            </div>
+            <div id="contactFormContainer">
+                <form action="" method="post">
+                    <div class="contact__fieldGroup">
+                        <div class="contact__field">
+                            <label for="name">Nombre</label>
+                            <input type="text" name="" id="name" placeholder="John" required>
+                        </div>
+                        <div class="contact__field">
+                            <label for="lastName">Apellido</label>
+                            <input type="text" name="" id="lastName" placeholder="Doe" required>
+                        </div>
+                    </div>
+                    <div class="contact__fieldGroup">
+                        <div class="contact__field">
+                            <label for="email">Email</label>
+                            <input type="text" name="" id="email" placeholder="johndoe@domain.com" required>
+                        </div>
+                        <div class="contact__field">
+                            <label for="phone">Telefono</label>
+                            <input type="text" name="" id="phone" placeholder="">
+                        </div>
+                    </div>
+                    <div class="contact__fieldGroup">
+                        <div class="contact__message">
+                            <label for="message">Message</label>
+                            <textarea name="textArea" rows="10" cols="50"></textarea>
+                        </div>
+                    </div>
+                    <div id="survey">
+                        <label for="survey">Selecciona tu album favorito</label>
+                        <div class="survey__items">
+                            <div class="survey__items__item">
+                                <input type="radio" name="album" id="ht" value="hybridtheory">
+                                <label for="ht">Hybrid Theory</label>
+                            </div>
+                            <div class="survey__items__item">
+                                <input type="radio" name="album" id="mt" value="meteora">
+                                <label for="mt">Meteora</label>
+                            </div>
+                            <div class="survey__items__item">
+                                <input type="radio" name="album" id="mtm" value="minutestomidnight">
+                                <label for="mtm">Minutes to Midnight</label>
+                            </div>
+                            <div class="survey__items__item">
+                                <input type="radio" name="album" id="ats" value="athousandsuns">
+                                <label for="ats">A Thousand Suns </label>
+                            </div>
+                            <div class="survey__items__item">
+                                <input type="radio" name="album" id="lt" value="livingthings">
+                                <label for="lt">Living Things</label>
+                            </div>
+                            <div class="survey__items__item">
+                                <input type="radio" name="album" id="thp" value="thehuntingparty">
+                                <label for="thp">The Hunting Party</label>
+                            </div>
+                            <div class="survey__items__item">
+                                <input type="radio" name="album" id="oml" value="onemorelight">
+                                <label for="oml">One More Light</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="suscription">
+                        <input type="checkbox" name="suscription" id="suscribe" value="suscribe">
+                        <label for="suscribe">Tilda esta opción si desea recibir notificaciones sobre la banda.</label>
+                    </div>
+                    <input id="enviar" type="submit" value="Enviar" class="btn">
+                </form>
+            </div>
+        </div>
     </main>
     <footer>
         <div id="social">

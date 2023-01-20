@@ -53,9 +53,15 @@ header{
     align-items: center;
 }
 
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    margin-right: 25px;
+}
+
 #navbar ul li{
-    display: inline-block;
     margin: 0 20px;
+    list-style: none;
 }
 
 
@@ -65,8 +71,12 @@ header{
 }
 
 #mainImg{
-    display: block;
-    margin: auto;
+    background-image: url("../img/mainbk.png");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 main{
     grid-area: "main";
@@ -196,7 +206,6 @@ footer{
 }
 
 .memberBlock__memberDesc{
-    display: inline;
     vertical-align:top;
     width: 35%;
     margin: 5vh 10vw;
@@ -204,7 +213,6 @@ footer{
 
 
 .memberBlock__memberImg{
-    display: inline;
     height: 500px;
     width: 500px;
     margin: 0 10vw;
@@ -215,56 +223,73 @@ footer{
 
 .album{
     margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
 }
 
-.album__albumHeader h2, .album__albumHeader h3{
-    display: inline;
+.album__albumHeader{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-bottom: 20px;
 }
 
-.album__albumBody img, .album__albumBody .album__albumBody__tracks{
-    display: inline-block;
-}
-
-.album__albumBody {
-    margin-bottom: 40px;
+.album__albumBody{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
 }
 
 .album__albumBody img{
     height: 350px;
     width: 350px;
+    margin-right: 100px;
 }
 
-.album__albumBody__tracks{
-    margin-left: 100px;
+.album__albumBody__tracks ol{
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.album__albumBody__tracks ol li{
+    margin-right: 150px;
+    margin-bottom: 15px;
 }
 
 
 /* Multimedia */
 .videoGroup{
-    display: block;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 25px 0;
 }
 
 .videoGroup__singleVideo{
     width: 45vw;
-    display: inline-block;
+    display: inherit;
+    flex-direction: row;
 }
 
-.videoGroup__singleVideo iframe{
-    display: inline-block;
-    
-}
 .videoGroup__singleVideo__description{
     width: 18vw;
     margin-left: 10px;
     vertical-align:top;
-    display: inline-block;
 }
 .videoGroup__singleVideo__description h3{
-    
-    display: block;
+    font-size: 2.5rem;
 }
-.videoGroup__singleVideo__description p{
-    display: block;
+
+.imageGroup{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.imageGroup img{
+    margin: 25px 0;
 }
 
 .galery__img{
@@ -274,20 +299,102 @@ footer{
 
 /* Contactos */
 
-.contact__field{
-    margin: 10px 0;
+#contactContainer{
+    width: 70vw;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    border: 2.5px solid #868D94;
 }
 
-.contact__field label{
-    display: block;
+#contactImgContainer{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.survey__field{
-    margin: 10px 0;
+#contactImgContainer img{
+    width: 700px;
+    height: 1000px;
 }
 
-.btn{
+#contactFormContainer{
+    width: 40%;
+    border-left: 0.5px solid #A8B0B9;
+    padding-left: 20px;
+}
+
+.contact__fieldGroup{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     margin: 50px 0;
+}
+
+.contact__field{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.contact__field input{
+   width: 80%;
+   height: 30px;
+   border: none;
+   border-bottom: 1.5px solid  #868D94;
+   background-color: unset;
+   font-size: 1rem;
+}
+
+.contact__message{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__message textarea{
+    width: 90%;
+    border: none;
+    border: 1.5px solid  #868D94;
+    background-color: #F1F1F1;
+    font-size: 1rem;
+
+}
+
+#survey{
+    border-top: 1.5px solid  #868D94;
+    padding-top: 10px;
+    margin-right: 10px;
+}
+
+#survey>label{
+    font-size: 2rem;
+}
+
+.survey__items{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.survey__items__item{
+    margin: 5px 0;
+}
+
+.contact__field label, .contact__message label{
+    margin-bottom: 20px;
+ }
+
+ #suscription{
+    margin-top: 30px;
+ }
+
+ #suscription label{
+    font-size: 1.2rem;
+ }
+.btn{
+    margin: 0 0 20px 0;
     height: 40px;
     width: 150px;
 }
