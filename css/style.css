@@ -153,8 +153,8 @@ main p {
     height: 200px;
     width: 300px;
     filter: gray;
-    -webkit-filter: grayscale(1);
-    filter: grayscale(1);
+    -webkit-filter: grayscale(0.8);
+    filter: grayscale(0.8);
     transition: filter 1s ease;
 }
 
@@ -233,13 +233,16 @@ h4{
 .memberBlock__memberImg{
     height: 300px;
     width: 300px;
+}
+
+.memberBlock div img {
     filter: gray;
-    -webkit-filter: grayscale(1);
-    filter: grayscale(1);
+    -webkit-filter: grayscale(0.8);
+    filter: grayscale(0.8);
     transition: filter 1s ease;
 }
 
-.memberBlock__memberImg:hover{
+.memberBlock div img:hover{
     -webkit-filter: grayscale(0);
     filter: none;
 }
@@ -307,6 +310,10 @@ footer img {
         height: 50px;
     }
 
+    h1{
+        font-size: 1.7rem;
+    }
+
     #logoGroup img {
         width: 30px;
         height: 30px;
@@ -344,6 +351,11 @@ footer img {
         border: none;
         padding: 0;
         margin: 0 8px;
+    }
+
+    #navbar ul li:hover{
+        background-color: unset;
+        text-decoration: underline;
     }
 
     #navbar ul li a {
