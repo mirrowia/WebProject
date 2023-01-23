@@ -19,12 +19,12 @@ header {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
-    height: 30px;
+    height: 5vh;
     width: 100%;
     z-index: 3;
     position: sticky;
     top: 0;
-    background-color: rgba(59, 62, 67, 0.9)
+    background-color: rgba(59, 62, 67, 0.9);
 }
 
 #logoGroup h1 {
@@ -44,14 +44,64 @@ header {
     align-items: center;
 }
 
+.menus{
+    width: 100px;
+    display: flex;
+    justify-content: center;
+}
+
 #navbar {
-    display: inherit;
-    flex-direction: row;
-    align-items: center;
+    width: 100%;
+    height: 0;
+    position:fixed;
+    right:0px;
+    bottom:0px;
+    left:0px;
+    background-color:#4A4D51;
+    transition: all 0.3s ease-out; 
+}
+
+#hamMenuBtn{
+    position: absolute;
+    opacity: 0;
+    width: 20px;
+    height: 20px;
+}
+
+#hamMenuBtn:hover{
+    cursor: pointer;
+}
+
+#hamMenuBtn:checked + #navbar {
+    display: block;
+    height: 95vh;
+    transition: all 0.3s ease-out; 
+    
 }
 
 #navbar ul {
-    display: none;
+    display: flex;
+    flex-direction: column;
+}
+
+#navbar ul li {
+    width: 100%;
+    list-style: none;
+    border-bottom: 1px solid grey;
+    padding: 25px 0;
+}
+
+#navbar ul li:hover{
+    background-color: rgb(169, 169, 169);
+}
+
+#navbar ul li a {
+    width: 100%;
+    text-decoration: none;
+    color: lightgray;
+    font-size: 3rem;
+    display:block;
+    text-align:center;
 }
 
 .menus {
@@ -61,8 +111,8 @@ header {
 }
 
 .mobileMenu img {
-    height: 15px;
-    width: 15px;
+    height: 20px;
+    width: 20px;
 }
 
 /* Main Index */
@@ -78,7 +128,6 @@ main {
     width: 100%;
     height: 100%;
     background-attachment: fixed;
-
     background-repeat: no-repeat;
     background-size: contain;
     border-bottom-right-radius: 10%;
@@ -236,7 +285,7 @@ footer img {
 @media (min-width: 550px) {
 
     #mainContent img{
-        height: 275px;
+        height: 300px;
         width: 450px;
     }
 
@@ -264,8 +313,24 @@ footer img {
         margin-left: 10px;
     }
 
+    .menus{
+        width: auto;
+    }
+
     .mobileMenu {
         display: none;
+    }
+
+    #hamMenuBtn{
+        display: none;
+    }
+
+    #navbar {
+        width: auto;
+        height: auto;
+        background-color: none;
+        position: relative;
+        display: flex;
     }
 
     #navbar ul {
@@ -275,12 +340,14 @@ footer img {
     }
 
     #navbar ul li {
-        margin: 0 8px;
         list-style: none;
+        border: none;
+        padding: 0;
+        margin: 0 8px;
     }
 
     #navbar ul li a {
-        font-size: 0.8rem;
+        font-size: 1rem;
         text-decoration: none;
         color: whitesmoke;
     }
@@ -292,7 +359,7 @@ footer img {
     }
 
     #mainImg{
-        height: 25vh;
+        height: 35vh;
     }
 
     main p {
@@ -382,6 +449,12 @@ footer img {
         margin: 0 10vw;
     }
 
+    #indexImagesGroup{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
     footer {
         height: 50px;
     }
@@ -408,18 +481,21 @@ footer img {
         text-decoration: none;
         color: whitesmoke;
     }
-
+    #mainImg{
+        height: 40vh;
+    }
     #mainContent img{
         height: 350px;
         width: 500px;
     }
-
-        /* Miembros */
     
-        .memberBlock__memberImg{
-            height: 350px;
-            width: 350px;
-        }
+
+    /* Miembros */
+    
+    .memberBlock__memberImg{
+         height: 350px;
+         width: 350px;
+    }
  }
 
  @media (min-width: 1680px) {
