@@ -333,9 +333,9 @@ footer img {
     }
 
     #navbar {
+        background-color: unset;
         width: auto;
         height: auto;
-        background-color: none;
         position: relative;
         display: flex;
     }
@@ -464,7 +464,7 @@ footer img {
     #indexImagesGroup{
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: space-between;
     }
 
     footer {
