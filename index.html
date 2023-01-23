@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Linkin Park</title>
 </head>
 
@@ -19,15 +20,20 @@
             <img src="img/logo4.png" alt="Logo 4">
             <img src="img/logo5.png" alt="Logo 5">
         </div>
-        <nav id="navbar">
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="members.html">Miembros</a></li>
-                <li><a href="discography.html">Discografia</a></li>
-                <li><a href="multimedia.html">Multimedia</a></li>
-                <li><a href="contact.html">Contacto</a></li>
-            </ul>
-        </nav>
+        <div class="menus">
+            <div class="mobileMenu">
+                <img src="img/menu.svg" alt="Menu">
+            </div>
+            <nav id="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="members.html">Miembros</a></li>
+                    <li><a href="discography.html">Discografia</a></li>
+                    <li><a href="multimedia.html">Multimedia</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
         <div id="mainImg"></div>
@@ -42,7 +48,7 @@
         </section>
         <div id="mainContent">
             <section id="firstSection" class="informationBox">
-                <div class="informationBox__description left">
+                <div class="informationBox__description left"  data-aos="fade-up">
                     <h2><i>It's starts with...</i></h2>
                     <p>Los primeros años de la banda se remontan a un pequeño estudio del vocalista Mike Shinoda donde
                         se
@@ -57,24 +63,12 @@
                         graduarse
                         del instituto, los jóvenes californianos Mike Shinoda, Rob Bourdon y Brad Delson tomaron mayor
                         participación en el grupo, y poco después, se unió Joe Hahn y Dave Farrell.​ </p>
-                    <p>Con cinco integrantes buscaron a otro más, invitaron a Mark Wakefield como vocalista principal;
+                    <p>Shinoda se vio en la necesidad de contratar un
+                        vocalista, de entre los solicitantes destacó Chester Bennington, el cual formó parte del grupo
+                        Grey Daze hasta 1998, y en la que adquirió su experiencia
                         con
-                        un presupuesto limitado, la agrupación grabó varias canciones en un estudio improvisado que
-                        culminó
-                        en un álbum demo, llamado Xero.​ Sin embargo, no tuvo éxito y les impidió obtener un contrato; a
-                        la
-                        vez, Wakefield al sentirse frustrado, decidió abandonar la formación para proseguir con sus
-                        estudios.
-                        Debido a la marcha de Wakefield del proyecto, Shinoda se vio en la necesidad de contratar un
-                        nuevo
-                        vocalista, de entre los solicitantes destacó Chester Bennington, un joven originario de Phoenix,
-                        Arizona, el cual formó parte del grupo Grey Daze hasta 1998, y en la que adquirió su experiencia
-                        con
-                        la grabaciones de discos desde los 16 años.​ Shinoda le hizo llegar algunas canciones
-                        interpretadas
-                        por el vocalista anterior y versiones instrumentales, para que grabara su voz sobre las últimas.
-                        Una
-                        vez finalizado el trabajo, Bennington contactó a Shinoda vía telefónica para mostrarle su propia
+                        la grabaciones de discos desde los 16 años.​
+                        Bennington contactó a Shinoda vía telefónica para mostrarle su propia
                         grabación, los integrantes estuvieron sorprendidos por su voz, por lo que decidieron convocarlo
                         a
                         una reunión inmediatamente.
@@ -87,22 +81,16 @@
                         Chester
                         sugirió el nombre Lincoln Park (en honor al parque de Lincoln Park, situado en Santa Mónica),
                         aunque
-                        con el conflicto del dominio lincolnpark.com modificaron la ortografía a Linkin Park.​ Pese a
-                        todos
-                        estos cambios el grupo no lograba encontrar cabida en algún sello discográfico, así que Jeff
-                        Blue,
-                        en aquel entonces vicepresidente de Warner Records, apoyó a la joven banda y después de
-                        constantes
-                        rechazos, lograron firmar su primer contrato en 1999.
+                        con el conflicto del dominio lincolnpark.com modificaron la ortografía a Linkin Park.​
                     </p>
                 </div>
-                <div class="imgDiv">
+                <div class="imgDiv"  data-aos="fade-up">
                     <img src="img/linkinpark_first.jpg" alt="Primera foto de la banda"
                         class="informationBox__img informationBox__imgRight">
                 </div>
             </section>
             <section id="secondSection" class="informationBox reverseRow">
-                <div class="informationBox__description right">
+                <div class="informationBox__description right"  data-aos="fade-up">
                     <h2><i>And got so far...</i></h2>
 
                     <p>Durante su carrera la banda gano varios premios en categorias como <b>Artista Alternativo
@@ -140,19 +128,19 @@
                         premios Grammy en 2006, en la cual Numb/Encore ganó el galardón a <b>mejor colaboración de
                             rap/cantada</b>.​</p>
                 </div>
-                <div class="imgDiv">
+                <div class="imgDiv" data-aos="fade-up">
                     <img src="img/band1.jpg" alt="Imagen de la banda 2000">
                 </div>
             </section>
 
-            <div id="indexImagesGroup">
-                <img src="img/band2.jpg" alt="Imagen de la banda 2007">
-                <img src="img/band3.jpg" alt="Imagen de la banda 2013">
-                <img src="img/band4.jpg" alt="Imagen de la banda 2017">
+            <div id="indexImagesGroup"  data-aos="fade-up">
+                <img src="img/band2.jpg" alt="Imagen de la banda 2007"  data-aos="fade-up">
+                <img src="img/band3.jpg" alt="Imagen de la banda 2013"  data-aos="fade-up">
+                <img src="img/band4.jpg" alt="Imagen de la banda 2017"  data-aos="fade-up">
             </div>
 
             <section id="thirdSection" class="informationBox">
-                <div class="informationBox__description center">
+                <div class="informationBox__description center"  data-aos="fade-up">
                     <h2><i>In The End...</i></h2>
                     <p>Luego de la muerte Chester Bennington en julio de 2017, la banda canceló todas sus giras y
                         eventos
@@ -165,7 +153,7 @@
                         de Streaming interactuando con los fans.</p>
                 </div>
             </section>
-            <div id="lastIndexImage">
+            <div id="lastIndexImage" data-aos="fade-up">
                 <img src="img/band5.jpg" alt="Imagen de la banda en vivo" class="informationBox__img centerImg">
             </div>
         </div>
@@ -185,6 +173,10 @@
             </ul>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

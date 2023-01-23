@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Linkin Park</title>
 </head>
 
@@ -19,15 +20,20 @@
             <img src="img/logo4.png" alt="Logo 4">
             <img src="img/logo5.png" alt="Logo 5">
         </div>
-        <nav id="navbar">
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="members.html">Miembros</a></li>
-                <li><a href="discography.html">Discografia</a></li>
-                <li><a href="multimedia.html">Multimedia</a></li>
-                <li><a href="contact.html">Contacto</a></li>
-            </ul>
-        </nav>
+        <div class="menus">
+            <div class="mobileMenu">
+                <img src="img/menu.svg" alt="Menu">
+            </div>
+            <nav id="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="members.html">Miembros</a></li>
+                    <li><a href="discography.html">Discografia</a></li>
+                    <li><a href="multimedia.html">Multimedia</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
         <div>
@@ -35,7 +41,7 @@
         </div>
 
         <div class="memberBlock">
-            <div class="memberBlock__memberDesc left">
+            <div class="memberBlock__memberDesc left" data-aos="fade-up">
                 <h3>Mike Shinoda</h3>
                 <h4>Voz principal / Tecladista</h4>
                 <p>Michael Kenji Shinoda nació el 11 de febrero de 1977 en California. Cofundador de la banda y es el
@@ -45,10 +51,11 @@
                     en el Museo Nacional Japones Americano.</p>
                 <p>Cuenta con dos proyectos ademas de Linkin Park, uno es Fort Minor y el otro como solista.</p>
             </div>
-            <img src="img/mike_shinoda.jpg" alt="Mike Shinoda" class="memberBlock__memberImg right">
+            <img src="img/mike_shinoda.jpg" alt="Mike Shinoda" class="memberBlock__memberImg right"
+                data-aos="fade-down">
         </div>
         <div class="memberBlock reverseRow">
-            <div class="memberBlock__memberDesc right">
+            <div class="memberBlock__memberDesc right" data-aos="fade-up">
                 <h3>Brad Delson</h3>
                 <h4>Guitarrista</h4>
                 <p>Bradford Phillip Delson nació el 1 de diciembre de 1977 en California. Cofundador de la banda es el
@@ -57,10 +64,10 @@
                     editorial de música responsable del descubrimiento de nuevos talentos y de supervisar el desarrollo
                     artístico de músicos de la compañía)</p>
             </div>
-            <img src="img/brad_delson.jpg" alt="Brad Delson" class="memberBlock__memberImg left">
+            <img src="img/brad_delson.jpg" alt="Brad Delson" class="memberBlock__memberImg left" data-aos="fade-down">
         </div>
         <div class="memberBlock">
-            <div class="memberBlock__memberDesc left">
+            <div class="memberBlock__memberDesc left" data-aos="fade-up">
                 <h3>Rob Bourdon</h3>
                 <h4>Baterista</h4>
                 <p>Robert Gregory Bourdon nació el 20 de enero de 1979 en California. Cofundador de la banda junto a
@@ -74,10 +81,10 @@
                     partida para Linkin Park.</p>
                 <p>Es el miembro más joven y alto de la banda.</p>
             </div>
-            <img src="img/rob_bourdon.jpg" alt="Rob Bourdon" class="memberBlock__memberImg right">
+            <img src="img/rob_bourdon.jpg" alt="Rob Bourdon" class="memberBlock__memberImg right" data-aos="fade-down">
         </div>
         <div class="memberBlock reverseRow">
-            <div class="memberBlock__memberDesc right">
+            <div class="memberBlock__memberDesc right" data-aos="fade-up">
                 <h3>Dave Farrell (Phoenix)</h3>
                 <h4>Bajista</h4>
                 <p>David Michael Farrell nació el 8 de febrero de 1977 en Massachusetts. Bajista de la banda, Farrell
@@ -89,10 +96,10 @@
                     abandonarla
                     para unirse a Linkin Park.</p>
             </div>
-            <img src="img/dave_farrel.jpg" alt="Phoenix" class="memberBlock__memberImg left">
+            <img src="img/dave_farrel.jpg" alt="Phoenix" class="memberBlock__memberImg left" data-aos="fade-down">
         </div>
         <div class="memberBlock">
-            <div class="memberBlock__memberDesc left">
+            <div class="memberBlock__memberDesc left" data-aos="fade-up">
                 <h3>Joe Hahn</h3>
                 <h4>Tecladista / DJ</h4>
                 <p>Joseph Hahn conocido tambien como Mr. Hahn nació el 15 de marzo de 1977 en Texas. Dj de la banda
@@ -105,10 +112,10 @@
                     en lo que dice.</p>
                 <p>Joe tiene un alter ego llamado Remy.</p>
             </div>
-            <img src="img/joe_hahn.jpg" alt="Joe Hahn" class="memberBlock__memberImg right">
+            <img src="img/joe_hahn.jpg" alt="Joe Hahn" class="memberBlock__memberImg right" data-aos="fade-down">
         </div>
         <div class="memberBlock reverseRow">
-            <div class="memberBlock__memberDesc right">
+            <div class="memberBlock__memberDesc right" data-aos="fade-up">
                 <h3>Chester Benninton</h3>
                 <h4>Voz principal</h4>
                 <p>Chester Charles Bennington nació el 20 de marzo de 1976 en Phoenix. Voz principal de la banda
@@ -122,7 +129,8 @@
                     apareció
                     en películas como Crank , Crank: High Voltage y Saw 3D</p>
             </div>
-            <img src="img/chester_benninton1.jpg" alt="Chester Benninton" class="memberBlock__memberImg left">
+            <img src="img/chester_benninton1.jpg" alt="Chester Benninton" class="memberBlock__memberImg left"
+                data-aos="fade-down">
         </div>
     </main>
     <footer>
@@ -140,7 +148,10 @@
             </ul>
         </div>
     </footer>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
